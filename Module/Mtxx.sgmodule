@@ -1,0 +1,11 @@
+#!name = Block ads | 美图秀秀
+#!desc = 名称： 美图秀秀去开屏 \n作者： jasonaax \n说明： 手动抓包
+#!author = Jasonaax
+#!category = 🚫 Block ads
+#!date= 2024-07-08 20:00
+
+[Map Local]
+^https:\/\/adui\.tg\.meitu\.com\/lua\/advertv4\/sync_load\.json data-type=text data="{}" status-code=200
+
+[MITM]
+hostname = %APPEND% adui.tg.meitu.com
