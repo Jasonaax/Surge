@@ -1,7 +1,6 @@
 {
     "name": "Jason策略图标",
-    "description": "策略图标",
-    "Surge/main/Icons": [
+    "icons": [
       {"name": "115", "url": "https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/115.png"},
       {"name": "AdBlock", "url": "https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/AdBlock.png"},
       {"name": "Adblock01", "url": "https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Adblock01.png"},
