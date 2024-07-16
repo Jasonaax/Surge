@@ -1,7 +1,6 @@
 {
     "name": "Jason机场图标",
-    "description": "机场图标",
-    "Icons": [
+    "icons": [
       {"name":"ACA", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Airport/ACA.png?raw=true"}, 
       {"name":"ACA01", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Airport/ACA01.png?raw=true"}, 
       {"name":"Aladdin", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Airport/Aladdin.png?raw=true"},  
