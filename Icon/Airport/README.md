@@ -2,7 +2,6 @@
 
 ### [Policy-Filter](https://github.com/Jasonaax/Surge/tree/main/Icon/Policy-Filter)
 
-https://github.com/Koolson/Qure
 ### [Koolson](https://github.com/Koolson/Qure)
 
 **订阅 图标仓库**
