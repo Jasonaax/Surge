@@ -148,7 +148,19 @@
       {"name":"youtube", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/youtube.png"},
       {"name":"youtube01", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/youtube01.png"},
       {"name":"zijie", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/zijie.png"},
-
+      {"name":"Back", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Back.png"},
+      {"name":"Bahamut", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Bahamut.png"},
+      {"name":"Fries", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Fries.png"},
+      {"name":"media_03", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/media_03.png"},
+      {"name":"media_04", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/media_04.png"},
+      {"name":"media_05", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/media_05.png"},
+      {"name":"Medi_06", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Medi_06.png"},
+      {"name":"Naiko", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Naiko.png"},
+      {"name":"niconico", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/niconico.png"},
+      {"name":"Null_Nation", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Null_Nation.png"},
+      {"name":"play", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/play.png"},
+      {"name":"PlayStation", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/PlayStation.png"},
+      
       
     ]
  }
