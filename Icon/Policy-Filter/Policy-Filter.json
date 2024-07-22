@@ -154,6 +154,8 @@
       {"name":"media_03", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/media_03.png"},
       {"name":"media_04", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/media_04.png"},
       {"name":"media_05", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/media_05.png"},
+      {"name":"media_06", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/media_06.png"},
+      {"name":"media_07", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/media_07.png"},
       {"name":"Medi_06", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Medi_06.png"},
       {"name":"Naiko", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Naiko.png"},
       {"name":"niconico", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/niconico.png"},
@@ -161,7 +163,8 @@
       {"name":"play", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/play.png"},
       {"name":"PlayStation", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/PlayStation.png"},
       {"name":"HomeKit", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/HomeKit.png"},
-      
+      {"name":"Play_Rewind", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Play_Rewind.png"},
+      {"name":"Play_Forward", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Play_Forward.png"},
       
     ]
  }
