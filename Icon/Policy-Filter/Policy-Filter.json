@@ -165,7 +165,8 @@
       {"name":"HomeKit", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/HomeKit.png"},
       {"name":"Play_Rewind", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Play_Rewind.png"},
       {"name":"Play_Forward", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Play_Forward.png"},
-      
+      {"name":"Play_Rewind01", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Play_Rewind01.png"},
+      {"name":"Play_Forward01", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Play_Forward01.png"},
     ]
  }
   
