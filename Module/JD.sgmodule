@@ -11,7 +11,7 @@ IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve
 ^http:\/\/\w{32}\.jddebug\.com\/diagnose\? - reject
 
 [Script]
-京东 = type=http-response,pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome),script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/jingdong.js,requires-body=true,timeout=60
+京东 = type=http-response,pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome),script-path=https://raw.githubusercontent.com/Jasonaax/QuantumultX/refs/heads/main/QuanX_RuCu6/Scripts/jingdong.js,requires-body=true,timeout=60
 
 [Map Local]
 ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(searchBoxWord|stationPullService|uniformRecommend[06]) data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"

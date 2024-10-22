@@ -10,7 +10,7 @@
 ^https?:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/recommendation\/banner - reject
 
 [Script]
-小米 = type=http-response,pattern=^https:\/\/api\.m\.mi\.com\/v1\/(app\/start|order\/expressView),script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/myBlockAds.js,requires-body=true,timeout=60
+小米 = type=http-response,pattern=^https:\/\/api\.m\.mi\.com\/v1\/(app\/start|order\/expressView),script-path=https://raw.githubusercontent.com/Jasonaax/QuantumultX/refs/heads/main/QuanX_RuCu6/Scripts/myBlockAds.js,requires-body=true,timeout=60
 
 [Map Local]
 ^https:\/\/api\.indeedpower\.com\/v1\/m\/edu\/module\/homepage_banner\/\?randomStr data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
