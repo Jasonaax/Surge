@@ -1,28 +1,54 @@
-#!name = 闲鱼
-#!desc = 闲鱼去广告
-#!author = fmz200
+#!name = Block ads | 闲鱼
+#!desc = 名称： 闲鱼去广告 \n作者： 可莉🅥\n说明： 移除开屏广告、商品信息流广告、搜索栏填充词、我的页面推广横幅。
+#!author = 可莉🅥
+#!category = 🚫 Block ads
+#!date = 2024-08-11 00:27:40
 
 [URL Rewrite]
-^https:\/\/gw\.alicdn\.com\/mt\/ - reject
-
-^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} - reject
-
-^https?:\/\/(gw|heic)\.alicdn\.com\/\w{2}s\/[\w\/.-]+\.jpg_(9\d{2}|\d{4}) - reject
-
-^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/.+\d{4}-\d{4}\.jpg_(9\d{2}|\d{4}) - reject
-
-^https?:\/\/(gw|heic)\.alicdn\.com\/imgextra\/\w{2}\/[\w!]+-\d-tps-\d{3,4}-\d{4}\.jpg_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q\d0\.jpg_\.(heic|webp)$ - reject
+# 拦截广告下发
+^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch - reject
+# 我的页面横幅
+^https:\/\/dinamicx\.alibabausercontent\.com\/pub\/fish_home_top_kingkong_new\/ - reject
+# 消息页感兴趣推荐
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.playboy\.recommend\/ - reject
+# 商品详情页底部推荐
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.item\.recommend\.list\/ - reject
+# 0关注情况下首页顶部关注频道的用户推荐
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.fun\.follow\.feed\.list\/ - reject
 
 [Map Local]
-^https?:\/\/(?>heic|gw)\.alicdn\.com\/tfs\/TB1.+?-\d{4}-\d{4}\.jpg_1200x1200q90\.jpg_\.\w{3,4}$ data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+# 搜索页多余推荐列表
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.item\.search\.activate\/2\.0 data-type=text data="{}" status-code=200
 
-^https?:\/\/asp\.cntv\.myalicdn\.com\/.+?\?maxbr=850 data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.discover\/1\.0 data-type=text data="{}" status-code=200
 
-^https?:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$ data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+# 这些宝贝超好卖
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.item\.resell\.recommendorhotcate\/1\.0 data-type=text data="{}" status-code=200
 
-^https?:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4} data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+# 用闲鱼币买更便宜
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.idle\.coin\.nextfresh\/1\.0 data-type=text data="{}" status-code=200
 
-^https?:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic$ data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
+[Script]
+# 首页顶部标签
+xianyu_ads = type=http-response, pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.home\.whale\.modulet\/, script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xianyu/xianyu_ads.js, requires-body=true, max-size=-1, timeout=60
+
+# 搜索栏填充词
+xianyu_ads = type=http-response, pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.shade\/, script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xianyu/xianyu_ads.js, requires-body=true, max-size=-1, timeout=60
+
+# 首页闲鱼币入口、底部发布球
+xianyu_ads = type=http-response, pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.list\/, script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xianyu/xianyu_ads.js, requires-body=true, max-size=-1, timeout=60
+
+# 商品信息流广告
+xianyu_ads = type=http-response, pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/, script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xianyu/xianyu_ads.js, requires-body=true, max-size=-1, timeout=60
+
+# 定位地区页面的信息流广告
+xianyu_ads = type=http-response, pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\/, script-path=https://github.com/fmz200/wool_scripts/raw/main/Scripts/xianyu/xianyu_ads.js, requires-body=true, max-size=-1, timeout=60
+
+# 个人主页
+goodfish = type=http-response, pattern=^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.idle\.user\.page\.my\.adapter\/, script-path=https://raw.githubusercontent.com/kelv1n1n/script/main/js/goodfish.js, requires-body=true, max-size=-1, timeout=60
+
+# 旧版首页顶部频道菜单
+goodfish = type=http-response, pattern=^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/, script-path=https://raw.githubusercontent.com/kelv1n1n/script/main/js/goodfish.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
-hostname = %APPEND% asp.cntv.myalicdn.com, gw.alicdn.com, heic.alicdn.com
+hostname = %APPEND% acs.m.goofish.com, g-acs.m.goofish.com, dinamicx.alibabausercontent.com
