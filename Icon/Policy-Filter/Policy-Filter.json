@@ -1,7 +1,7 @@
  {
     "name": "Surge Policy icon",
     "description": "Desing By Jasonaax",
-    "time": "2024-07-21",
+    "time": "2024-11-04",
     "icons": [
       {"name":"115", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/115.png"},
       {"name":"AdBlock", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/AdBlock.png"},
@@ -161,6 +161,7 @@
       {"name":"VirMach", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/VirMach.png"},
       {"name":"Want_Want", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/Want_Want.png"},
       {"name":"wechat", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/wechat.png"},
+      {"name":"wechat01", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/wechat01.png"},
       {"name":"weibo", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/weibo.png"},
       {"name":"WeTV", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/WeTV.png"},
       {"name":"whatsapp", "url":"https://raw.githubusercontent.com/Jasonaax/Surge/main/Icon/Policy-Filter/whatsapp.png"},
