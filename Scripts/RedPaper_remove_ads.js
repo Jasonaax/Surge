@@ -205,31 +205,31 @@ if (url.includes("/v1/note/imagefeed") || url.includes("/v2/note/feed")) {
     }
   }
   if (obj?.data?.note_id !== "" && videoFeedUnlock?.length > 0) {
-    if (obj?.data?.disable === true && obj?.data?.msg !== "") {
+    if (obj?.data?.disable === true && obj.data.msg !== "") {
       obj.data.disable = false;
-      obj.data.msg = "保存成功! ";
+      obj.data.msg = "保存成功!";
       obj.data.download_url = "";
       for (let item of videoFeedUnlock) {
         if (item.id === obj.data.note_id) {
           obj.data.download_url = item.url;
+          break; // 找到匹配后可以直接退出循环
         }
       }
-      // let attach = { openUrl: +obj.data.download_url, clipboard: obj.data.download_url };
-      // 弃用上面的写法 使用快捷指令 自动保存至相册
-      let notificationTitle = "🦄RedBook";
-      let notificationSubtitle = "作者不让下载 另辟蹊径吧";
-      let notificationBody = "无水印下载链接在这里咯: " + obj.data.download_url;
-      
-      let notificationOptions = {
-action: "open-url",
-url: obj.data.download_url,
-"auto-dismiss" : 20
-};
-
-              $notification.post(notificationTitle, notificationSubtitle, notificationBody, notificationOptions);
-      );
+      if (obj.data.download_url !== "") { // 确保有有效的下载链接再发送通知
+        let notificationTitle = "🦄RedBook";
+        let notificationSubtitle = "作者不让下载 另辟蹊径吧";
+        let notificationBody = "无水印下载链接在这里咯: " + obj.data.download_url;
+        let notificationOptions = {
+          action: "open-url",
+          url: obj.data.download_url,
+          "auto-dismiss" : 20
+        };
+  
+        $notification.post(notificationTitle, notificationSubtitle, notificationBody, notificationOptions);
+        // 如果需要，可以在此添加快捷指令的通知
+      }
     }
-  }
+  }  
   videoFeedUnlock = { notSave: "rucu6" };
   $persistentStore.write(JSON.stringify(videoFeedUnlock), "redBookVideoFeedUnlock");
 } else if (url.includes("/v10/search/notes")) {
