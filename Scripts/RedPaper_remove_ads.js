@@ -216,17 +216,11 @@ if (url.includes("/v1/note/imagefeed") || url.includes("/v2/note/feed")) {
       }
       // let attach = { openUrl: +obj.data.download_url, clipboard: obj.data.download_url };
       // 弃用上面的写法 使用快捷指令 自动保存至相册
-      let notificationTitle = "🦄RedBook";
-      let notificationSubtitle = "作者不让下载 另辟蹊径吧";
-      let notificationBody = "无水印下载链接在这里咯: " + obj.data.download_url;
-      
-      let notificationOptions = {
-action: "open-url",
-url: obj.data.download_url,
-"auto-dismiss" : 20
-};
-
-              $notification.post(notificationTitle, notificationSubtitle, notificationBody, notificationOptions);
+      $notification.post(
+        "解析成功",
+        "",
+        "无水印下载地址解析成功，点此通知跳转至快捷指令下载该媒体。",
+        "shortcuts://run-shortcut?name=下载媒体&input=text&text=" + obj.data.download_url
       );
     }
   }
