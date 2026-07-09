@@ -5,9 +5,7 @@
 #!date= 2024-07-05 20:00
 
 [Rule]
-# 只针对小红书走 UDP 443 拒绝，其他所有软件的 QUIC 正常
-DOMAIN-SUFFIX,xiaohongshu.com,REJECT-NO-DROP
-DOMAIN-SUFFIX,edith.xiaohongshu.com,REJECT-NO-DROP
+AND,((DEST-PORT,443),(PROTOCOL,UDP)),REJECT-NO-DROP
 
 [Map Local]
 # 惊喜弹窗
