@@ -5,7 +5,11 @@
 #!date= 2026-07-05 20:00
 
 [Rule]
-AND,((DEST-PORT,443),(PROTOCOL,UDP)),REJECT-NO-DROP
+DOMAIN,ads-img-qc.xhscdn.com,REJECT
+DOMAIN,ads-video-al.xhscdn.com,REJECT
+DOMAIN,ads-video-qc.xhscdn.com,REJECT
+DOMAIN,t-ads.xiaohongshu.com,REJECT
+AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com)),REJECT
 
 [Map Local]
 # 惊喜弹窗
